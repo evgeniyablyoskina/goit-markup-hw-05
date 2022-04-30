@@ -64,7 +64,7 @@
         <!-- <div class="overlay"> -->
         <div class="container">
           <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1>
-          <button class="hero-btn" type="button">Заказать услугу</button>
+          <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
           <!-- </div> -->
         </div>
       </section>
@@ -128,13 +128,22 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="doings list">
             <li class="doings-item">
-              <img src="./images/box1.jpg" alt="Десктопные приложения" width="370" />
+              <div class="doings-thumb">
+                <img src="./images/box1.jpg" alt="Десктопные приложения" width="370" />
+                <h3 class="doings-label">Десктопные приложения</h3>
+              </div>
             </li>
             <li class="doings-item">
-              <img src="./images/box2.jpg" alt="Мобильные приложения" width="370" />
+              <div class="doings-thumb">
+                <img src="./images/box2.jpg" alt="Мобильные приложения" width="370" />
+                <h3 class="doings-label">Мобильные приложения</h3>
+              </div>
             </li>
             <li class="doings-item">
-              <img src="./images/box3.jpg" alt="Дизайнерские решения" width="370" />
+              <div class="doings-thumb">
+                <img src="./images/box3.jpg" alt="Дизайнерские решения" width="370" />
+                <h3 class="doings-label">Дизайнерские решения</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -414,5 +423,16 @@
         </ul>
       </div>
     </footer>
+
+    <!-- _______________ Modal Window _______________ -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <svg class="button-close-icon" width="30" height="30" data-modal-close>
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
